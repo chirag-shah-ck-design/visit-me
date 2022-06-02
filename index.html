@@ -40,23 +40,24 @@
         }
       }
       function saveContact() {
-        let aTag = document.createElement("a");
-        aTag.href = `
-data:text/vcard;charset=UTF-8,BEGIN:VCARD
-VERSION:2.1
-N:Shah;Chirag
-FN:Chirag Shah
-ORG:CKReality
-TITLE:Founder
-URL;WORK:
-EMAIL;PREF;INTERNET:shah_cks@yahoo.com
-TEL;WORK;VOICE:9913560744
-ADR;WORK;:;{&#x27;url&#x27;: &#x27;https://goo.gl/maps/9ycuDhbszBj68vVK6;}
-REV:1
-END:VCARD
-`;
-        aTag.download = "contact.vcf";
-        aTag.click();
+        // let aTag = document.createElement("a");
+
+//         aTag.href = `
+// data:text/vcard;charset=UTF-8,BEGIN:VCARD
+// VERSION:2.1
+// N:Shah;Chirag
+// FN:Chirag Shah
+// ORG:CKReality
+// TITLE:Founder
+// URL;WORK:
+// EMAIL;PREF;INTERNET:shah_cks@yahoo.com
+// TEL;WORK;VOICE:9913560744
+// ADR;WORK;:;{&#x27;url&#x27;: &#x27;https://goo.gl/maps/9ycuDhbszBj68vVK6;}
+// REV:1
+// END:VCARD
+// `;
+        // aTag.download = "contact.vcf";
+        // aTag.click();
       }
       document.addEventListener("DOMContentLoaded", function (event) {
         document
@@ -280,9 +281,10 @@ END:VCARD
               </div>
               <div class="row mb-3">
                 <div class="col-12">
-                  <button
+                  <a href="https://github.com/chirag-shah-ck-design/visit-me/raw/main/Chirag%20Shah%20Visiting%20Card.pdf"
                     class="px-3 btn btn-sm waves-effect"
-                    onclick="saveContact()"
+                    
+                    "
                     style="background-color: #ed6b52"
                   >
                     <div
@@ -299,7 +301,7 @@ END:VCARD
                       </div>
                       <h6 class="text-white m-0 ms-2">Save Contact</h6>
                     </div>
-                  </button>
+                  </a>
                 </div>
               </div>
            
